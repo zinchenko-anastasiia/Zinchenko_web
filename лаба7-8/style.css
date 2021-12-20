@@ -1,0 +1,216 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+
+  }
+  
+  #header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    
+  
+  }
+
+
+
+  #headerContent {
+    display: flex;
+
+  }
+  
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+ 
+
+input[type=radio]{
+    display: none;
+}
+.sideBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 10%;
+ 
+   box-shadow: 5px 5px 10px 2px rgba(248, 11, 43, 0.15);
+
+
+
+  }
+
+label{
+    cursor:pointer;
+    padding: 0px 15px;
+    background: #F02944;
+border-radius: 10px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 35px;
+margin: 10px;
+padding-top:10px ;
+text-align: center;
+
+text-transform: uppercase;
+
+color: #F7F2EF;
+}
+ input[type=radio]:checked+label{
+    background-color: #7D0214;
+}
+label:hover{
+    color: #B11B2F;;
+}
+.products{
+    margin: 20px;
+}
+.photo{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+}
+.products:hover{
+    box-shadow: 5px 5px 10px 2px rgba(248, 11, 43, 0.15);
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  #first{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #5B6334;
+  }
+  .info{
+     margin: 10px;
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 14px;
+     line-height: 56px;
+     text-transform: uppercase;
+     border-top: 1px solid rgba(42, 46, 24, 1);;
+     color: rgba(42, 46, 24, 1);
+
+  }
+#st_1:checked ~ .card2
+{
+display: none;
+}
+#st_1:checked ~ .card3
+{
+display: none;
+}
+#st_1:checked ~ .card4
+{
+display: none;
+}
+#st_2:checked ~ .card1
+{
+display: none;
+}
+#st_2:checked ~ .card3
+{
+display: none;
+}
+#st_2:checked ~ .card4
+{
+display: none;
+}
+#st_3:checked ~ .card1
+{
+display: none;
+}
+#st_3:checked ~ .card2
+{
+display: none;
+}
+#st_3:checked ~ .card4
+{
+display: none;
+}
+#st_4:checked ~ .card1
+{
+display: none;
+}
+#st_4:checked ~ .card2
+{
+display: none;
+}
+#st_4:checked ~ .card3
+{
+display: none;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    order:3;
+  }
+ 
+
+@media (max-width: 840px) {
+ 
+.name{
+    display: none;
+}
+.sideBar{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: center;
+}
+label{
+    width: 20%;
+        margin-bottom: 2px;
+  
+}
+#slider{
+    display: none;
+}
+}
+@media (min-width: 375px) and (max-width:839px) {
+    .sideBar{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    label{
+        width: 30%;
+        margin-bottom: 2px;
+       
+    }
+    .name{
+        display: none;
+    }
+    .info{
+        display: none;
+    }
+   
+    #slider{
+        display: none;
+    }
+    #header {
+        height: 50px;
+        display: flex;
+        justify-content:space-around;
+        
+      }
+
+    }
+
+
+
